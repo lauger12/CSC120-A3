@@ -1,5 +1,3 @@
-
-
 class test{
 
 public static void main(String[] args) {
@@ -30,3 +28,5 @@ System.out.println(response + "?");
 
 // for String line in transcript{
 // }
+
+// String[] trans = new String[2*roundnumber]; //
