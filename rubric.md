@@ -38,32 +38,32 @@ __part__ 1 pt: Prints transcript when terminating
 
 ## Kudos:
 
-_____ (Kudos!) Handles mirror words with punctuation
+__no__ (Kudos!) Handles mirror words with punctuation
 
-_____ (Kudos!) Generates output with correct punctuation & capitalization
+__part__ (Kudos!) Generates output with correct punctuation & capitalization
 
-__part__ (Kudos!) Handles you --> me/I dilemma
-
+__no__ (Kudos!) Handles you --> me/I dilemma
+            -maybe could use last index of? (if I were to come back and add this)
 
 
 ## General Items:
 
-_____ 4 pts: Programs compile without errors or warnings
+__yes__ 4 pts: Programs compile without errors or warnings
 
-_____ 2 pts: Executes fully & consistently without crashing (exception/freeze)
+__yes__ 2 pts: Executes fully & consistently without crashing (exception/freeze)
 
-_____ 2 pt: Complies with style guidelines (missing items 1 pt each):
+__yes__ 2 pt: Complies with style guidelines (missing items 1 pt each):
 
       _____ Classes & class members all have Javadoc header comments
 
-      _____ Clear and consistent indentation of bracketed sections
+      __yes__ Clear and consistent indentation of bracketed sections
 
-      _____ Adheres to Java conventions on naming & capitalization
+      __yes__ Adheres to Java conventions on naming & capitalization
 
-      _____ Methods & variables all have clear and accurate names
+      __yes__ Methods & variables all have clear and accurate names
 
-      _____ Methods avoid confusing side effects
+      __yes__ Methods avoid confusing side effects
 
-_____ 1 pt: All required files included with submission (including completed checklist file)
+__yes__ 1 pt: All required files included with submission (including completed checklist file)
 
-_____ 1 pt: `reflection.md` contains your reflection on the assignment
+__yes__ 1 pt: `reflection.md` contains your reflection on the assignment

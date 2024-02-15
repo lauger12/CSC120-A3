@@ -1,11 +1,11 @@
 class test{
 
 public static void main(String[] args) {
-    String phrase = "I am thinking";
+    String phrase = "I am thinking about you";
     String[] splittext = phrase.split("\\s+");
 
-
 for (int i = 0; i < splittext.length; i++){
+  
     if (splittext[i].equals("I")){
         splittext[i] = "you";
     }
