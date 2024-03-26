@@ -2,7 +2,17 @@ import java.util.Random;
 import java.util.Scanner;
 import java.util.ArrayList;
 
-class Conversation { // class for our conversation where all our methods will be 
+class Conversation { // class for our conversation where all our methods will be
+
+    /**
+     * The main method. This is where all of the information regarding the chatbot
+     * conversation goes. It takes in user input for how many rounds the conversation 
+     * will last, then a for loop is run for the specfified # of rounds. The chatbot repeats
+     * phrases with specific keywords back to the user, replacing specified keywords. If no
+     * keywords are detected, a randomly selected canned phrase is returned
+     * 
+     * @param args String array args for command line arguments
+     **/
     public static void main(String[] args) {
         // Initial setup
         Scanner sc = new Scanner(System.in);
@@ -25,19 +35,20 @@ class Conversation { // class for our conversation where all our methods will be
 
         // Start our conversation
         System.out.println("\nHello, please give a number of rounds you would like this conversation to last"); // ask for # of rounds
-                                                                                                                
-
         roundnumber = sc.nextInt(); // set the # of rounds to the user's input
         System.out.println("\nWelcome to Chatbot! What's up?"); // inital phrase from chatbot
         ArrayList<String> transcript = new ArrayList<String>(2 * roundnumber); // creating an Arraylist (parameter String) for the transcript
-                                                                               
+
         s = sc.nextLine(); // clear input buffer (enter)
 
+        //for loop that runs the conversation for the set amount of rounds, not a method but a key loop of the project
+        
         for (int i = 0; i < roundnumber; i++) {
             int ran = random.nextInt(0, 8); // get a new random number each round for our canned responses
             s = sc.nextLine(); // get user input
             transcript.add(s); // add user input to transcript
-            String[] splittext = s.split("\\s+"); // splits the user input string into a string list, separating based on the whitespaces in the user input
+            String[] splittext = s.split("\\s+"); // splits the user input string into a string list, separating based
+                                                  // on the whitespaces in the user input
 
             if (s.contains("was") || s.contains("were") || s.contains("I ") || s.contains("you ") || s.contains("me ")
                     || s.contains("am ") || s.contains("are ") || s.contains("your ") || s.contains("my ")
@@ -83,9 +94,9 @@ class Conversation { // class for our conversation where all our methods will be
                 transcript.add(reply); // add phrase to the transcript
             }
         }
-        System.out.println("Thanks for talking, goodbye! :)\n"); // after the # of rounds pass, print the goodbye 
+        System.out.println("Thanks for talking, goodbye! :)\n"); // after the # of rounds pass, print the goodbye
         sc.close(); // close scanner when done with it
-        System.out.println("Transcript:"); // header for transcript 
+        System.out.println("Transcript:"); // header for transcript
         System.out.println("-----------"); // line below transcript (for formatting)
         // give transcript
         for (int a = 0; a < transcript.size(); a++) { // loop will go for each item (phrase) in the transcript
